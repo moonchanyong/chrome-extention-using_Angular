@@ -3,6 +3,8 @@
 
 Angular project and build by gulp
 
+init setting to use later
+
 ref-site : https://www.red-gate.com/simple-talk/dotnet/software-tools/developing-google-chrome-extension-using-angular-4/ 
 
 
