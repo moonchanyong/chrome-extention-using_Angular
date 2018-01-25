@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "See RealInfo",
+    "version": "1.0.0",
+    "permissions": [ "tabs", "activeTab" ],
+    "content_scripts": [
+      {
+        "matches": [ "*://*/*" ],
+        "js": [ "content-script.js" ]
+      }
+    ],
+    "background": {
+      "page": "index.html#/event-page",
+      "persistent": false
+    },
+    "browser_action": {
+      "default_title": "Open Popup!",
+      "default_popup": "index.html#/popup",
+      "default_icon" : "assets/icon/icon.png"
+    },
+    "icons": {
+      "19": "assets/icon/icon.png",
+      "38": "assets/icon/icon.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }
